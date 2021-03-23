@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <div id='zadanie1'>
+    Dzisiaj jest:
+    <div id='dzien'> Dzień: </div>
+    <div id='miesiac'> Miesiąc: </div>
+    <div id='rok'> Rok: </div>
+  </div>
+
+  <p>
+  <div id='zadanie2'>
+    <div id='cala_data'></div>
+  </div>
+  </p>
+
+  <div id='zadanie3'>
+    <div id='czas_rzeczywisty'></div>
+  </div>
+
+    <script>
+      var blok_dzien = document.getElementById('dzien');
+      var blok_miesiac = document.getElementById('miesiac');
+      var blok_rok = document.getElementById('rok');
+      var data = new Date();
+      blok_dzien.innerHTML+=data.getDate();
+      blok_miesiac.innerHTML+=data.getMonth()+1;
+      blok_rok.innerHTML+=data.getFullYear();
+
+      //zadanie 2
+      var dzien = data.getDate();
+      var month = data.getMonth();
+      var rok = data.getFullYear();
+
+      switch(month){
+        case 0: month = "stycznia"; break;
+        case 1: month = "lutego"; break;
+        case 2: month = "marca"; break;
+        case 3: month = "kwietnia"; break;
+        case 4: month = "maja"; break;
+        case 5: month = "czerwca"; break;
+        case 6: month = "lipca"; break;
+        case 7: month = "sierpnia"; break;
+        case 8: month = "września"; break;
+        case 9: month = "października"; break;
+        case 10: month = "listopada"; break;
+        case 11: month = "grudnia"; break;
+      }
+
+      cala_data.innerHTML=dzien+" "+month+" "+rok+" "+'roku';
+
+      //zadanie 3
+      var dzien_tygodnia = data.getDay();
+
+      switch(dzien_tygodnia){
+        case 0: dzien_tygodnia = "niedziela"; break;
+        case 1: dzien_tygodnia = "poniedziałek"; break;
+        case 2: dzien_tygodnia = "wtorek"; break;
+        case 3: dzien_tygodnia = "środa"; break;
+        case 4: dzien_tygodnia = "czwartek"; break;
+        case 5: dzien_tygodnia = "piątek"; break;
+        case 6: dzien_tygodnia = "sobota"; break;
+      }
+      function zegar(){
+      var data2 = new Date();
+      var godzina = data2.getHours();
+      var minuta = data2.getMinutes();
+      var sekunda = data2.getSeconds();
+
+      if(sekunda<10)
+        sekunda ="0"+sekunda;
+      if(minuta<10)
+        minuta="0"+minuta;
+
+      czas_rzeczywisty.innerHTML=dzien+" "+month+" "+rok+"r., "+dzien_tygodnia+" "+godzina+":"+minuta+":"+sekunda;
+      }
+      setInterval('zegar()',1000);
+    </script>
+  </body>
+</html>
