@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> komis samochodowy </title>
+		<link rel="stylesheet" href="auto.css">
+	</head>
+	
+	<body>
+		<script>
+			function changeImg(image)
+			{
+				var imghol = document.getElementById("imageHolder");
+				imghol.src = image;
+			}
+		</script>
+
+		<div id="banner">AUTOKOMIS</div>
+		
+		<div id="rightPanel">
+			<img id="imageHolder" src="Komis.jpg" alt="obrazek">
+		</div>
+		
+		<div id="leftPanel1">
+		Oferta samochodów:
+			<ul>
+				<li><a id="car1" href="javascript:"onclick="changeImg('Fiat500.jpg');">Fiat 500</a></li>
+				<li><a id="car2" href="javascript:"onclick="changeImg('HondaCivic.jpg');"> Honda CIVIC </a></li>
+				<li><a id="car3" href="javascript:"onclick="changeImg('Clio.png');"> Renault CLIO </a></li>
+				<li><a id="car4" href="javascript:"onclick="changeImg('Hyundai.jpg');"> Hyundai i30 </a></li>
+			</ul>
+		</div>
+		
+		<div id="leftPanel2">
+			<form action="/action_page.php" method="get">
+				<label for="marka auta">Marka auta:</label>
+				<input type="text" id="marka auta" name="marka auta">
+				<br>
+				<label for="email">Mail kontaktowy</label>
+				<input type="email" id="email" name="email" value="klient@gmail.com">
+				<br>
+				<input type="submit" value="Wyślij Ogłoszenie">
+			</form>
+		</div>
+		
+		<footer>
+			<img id="footerImage" src="gurucar.png" alt="autko">
+			Autor: Hubert Przybyła <br>
+			© Copyright ZSŁ 2020 
+		</footer>
+	</body>
+</html>
