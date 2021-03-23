@@ -1,0 +1,17 @@
+div#ramka{
+  padding:4px 25px 25px 25px;
+  background-color:rgb(120, 190, 255);
+  width:25%;
+  text-align:center;
+  margin:auto;
+  border-style:solid;
+  border-radius: 20px;
+  border-color:rgb(80, 80, 80);
+}
+
+p{
+  font-size:30px;
+  font-family: Arial;
+}
+
+input#
