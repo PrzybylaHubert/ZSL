@@ -1,0 +1,10 @@
+1) zapytanie do usunięcia użytkownika z db ok
+2) dodanie skryptu delete.php w scripts ok
+3) wysłanie identyfikatora użytkownika za pomocą zmiennej GET z customers.php do delete.php (hiperłącze) ok
+4) skrypt delete.php
+- Połączenie z bazą danych w delete.php ok
+- wysłanie zapytania ok
+- sprawdzenie ilości usuniętych rekordów (https://www.php.net/manual/en/mysqli.affected-rows.php) ok
+- przekierowanie do strony customers z informacją odnośnie usunięcia użytkownika
+  - $_GET['delete'] jeśli będzie równa 1 => wyświetlić komunikat o treści: PRAWIDŁOWO USUNIĘTO UŻYTKOWNIKA O ID= ...
+  - przesłać dane odnośnie id w hiperłączu ze skryptu delete.php (jak prrzesłać dwie zmienne w hiperłączu)
