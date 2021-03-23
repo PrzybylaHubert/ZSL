@@ -1,0 +1,66 @@
+#page{
+  width:100%;
+}
+
+#banner{
+  background-color:#829EB9;
+  font-family:arial;
+  height:50px;
+  text-align:center;
+}
+
+#left{
+  background-color:#B3C6D9;
+  height:600px;
+  width:25%;
+  float:left;
+}
+
+#right{
+  background-color:#E0E9F1;
+  height:600px;
+  width:75%;
+  text-align:center;
+  float:right;
+}
+
+#footer{
+  background-color:#829EB9;
+  font-family: arial;
+  text-align:right;
+}
+
+table{
+  margin:30px;
+  border-style:solid;
+  border-width:2px;
+  width:70%;
+}
+
+tr:hover{
+  background-color:blue;
+  color:white;
+}
+
+tr:hover th{
+  background-color:blue;
+  color:white;
+}
+
+th{
+  background-color:#B3C6D9;
+  border-style:solid;
+  border-width:2px;
+}
+
+p{
+  margin:30px;
+}
+
+img{
+  margin:30px;
+  padding:10px;
+  border-style:dashed;
+  border-width:2px;
+  border-color:#B3C6D9;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='style.css'>
+    <title>Miernik jakości hasła</title>
+  </head>
+  <body>
+    <div>
+      <div id='banner'>
+        <h1><a href='index.html'>Sprawdź swoje hasło</a></h1>
+      </div>
+
+      <div id='left'>
+        <h2> Wybierz </h2>
+        <ol>
+          <li><a href='haslo.html'>Sprawdź hasło</a></li>
+          <li><a href='zasady.html'>Zasady tworzenia hasła</a></li>
+      </div>
+
+      <div id='right'>
+        <p>Twoje hasło:
+          <input type='password' id='haslo'>
+          <input type='submit' value='Sprawdź' id='wyslij'>
+        </p>
+
+        <span id='wynik'></span>
+
+        <script>
+          var przycisk = document.getElementById('wyslij');
+          var pole = document.getElementById('wynik');
+          przycisk.onclick = function(){
+            var pass = document.getElementById('haslo').value;
+
+            var ma_cyfre = Boolean(false);
+            for(var i=0; i<10; i++){
+              if(pass.match(i))
+                ma_cyfre = true;
+            }
+
+            if(pass == ''){
+              pole.innerHTML='WPISZ HASŁO!';
+              pole.style.color='red';
+            }
+            else if(pass.length>=7 && ma_cyfre){
+              pole.innerHTML='DOBRE';
+              pole.style.color='green';
+            }
+            else if(pass.length>=4 && ma_cyfre){
+              pole.innerHTML='ŚREDNIE';
+              pole.style.color='blue';
+            }
+            else{
+              pole.innerHTML='SŁABE';
+              pole.style.color='yellow';
+            }
+          }
+        </script>
+
+      </div>
+
+      <div id='footer'>
+        <h3>Miernik jakości hasła</h3>
+        <p>stronę opracował: Przybyła</p>
+      </div>
+    </div>
+  </body>
+</html>
