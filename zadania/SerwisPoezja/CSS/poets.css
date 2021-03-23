@@ -1,0 +1,45 @@
+h1
+{
+	text-align:center;
+	font-size:45px;
+	text-decoration:underline;
+	margin-top:50px;
+	margin-right:30px;
+	margin-bottom:50px;
+	margin-left:30px;
+}
+a
+{
+	text-align:center;
+	text-decoration:none;
+	color:gold;
+	text-align:center;
+	font-size:12px;
+}
+img
+{
+	height:200px;
+	Width:200px;
+	
+}
+body
+{
+	background-color:DarkKhaki;
+	padding-top:50px;
+	padding-left:60px;
+	padding-bottom:0px;
+	padding-right:60px;
+	color:maroon;
+	font-size:25px;
+	font-style:Palatino, serif;
+	text-align:center;
+}
+div
+{
+	text-align:justify;
+}
+span.NazwiskoPoety
+	{
+		background-color: DarkSeaGreen ;
+		color: Maroon;
+	}

@@ -1,0 +1,90 @@
+body
+{
+	background-color:DarkSlateGray;
+}
+div.baner1
+{
+	color:Gold;
+	background-color:Maroon;
+	font-size:40px;
+	height:50px;
+	width:100%;
+	font-family:Georgia, serif;
+	font-style:italic;
+	text-align:center;
+}
+div.menu1
+{
+	float: left;
+	background-color:DarkCyan;
+	color:Gold;
+	font-size:25px;
+	height:600px;
+	width:25%;
+	font-weight:bold;
+	text-align:center;
+	border-color:gold;
+	border-style:solid;
+	border-width:1px;
+	margin-top:4px;
+	margin-bottom:4px;
+	margin-left:4px;
+	margin-right:0px;
+}
+ul
+{
+	font-family:Georgia, serif;
+	font-style:italic;
+	font-weight:400;
+	color:gold;
+	text-align:left;
+}
+a
+{
+	text-decoration: none;
+	color:gold;
+}
+a:visited
+{
+	color:GoldenRod;
+}
+img
+{
+	height:300px;
+	width:300px;
+	float:left;
+}
+
+div.content1
+{
+	background-color:DarkKhaki;
+	height:600px;
+	width:74%;
+	text-align:justify;
+	font-size:25px;
+	color:DarkSlateGray;
+	margin-left:0px;
+	margin-top:4px;
+	margin-right:4px;
+	margin-bottom:4px;
+	padding-top:25px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:25px;
+	border-style:solid;
+	border-color:DarkKhaki;
+	border-width:1px;
+	box-sizing:border-box;
+	float:right;
+}
+img.pioro
+{
+	height:120px;
+	width:120px;
+	float:right;
+}
+div.CopyrightNote
+{
+	font-size:12px;
+	text-align:right;
+}
