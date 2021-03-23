@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='bloki.css'>
+    <title></title>
+  </head>
+  <body>
+    <div id='main'>
+      <div class='pierwszy' id='skrypt1'></div>
+      <div class='pierwszy' id='skrypt2'></div>
+      <div class='drugi'><a href='hehe'>Przykładowy link</a><br><a href='xd'>Przykładowy link</a></div>
+      <div class='trzeci' id='skrypt3'></div>
+      <div class='trzeci' id='skrypt4'></div>
+      <div class='czwarty'></div>
+      <div class='czwarty'></div>
+      <div class='czwarty'></div>
+      <div class='czwarty'></div>
+    </div>
+
+    <script>
+      var skrypt1 = document.getElementById('skrypt1');
+      var skrypt2 = document.getElementById('skrypt2');
+      var skrypt3 = document.getElementById('skrypt3');
+      var skrypt4 = document.getElementById('skrypt4');
+        skrypt1.onmouseover = function(){
+          skrypt1.style.backgroundColor="#2084c2";
+        }
+        skrypt1.onmouseout = function(){
+          skrypt1.style.backgroundColor="#3095d3";
+        }
+        skrypt2.onmouseover = function(){
+          skrypt2.style.backgroundColor="#2084c2";
+        }
+        skrypt2.onmouseout = function(){
+          skrypt2.style.backgroundColor="#3095d3";
+        }
+        skrypt3.onmouseover = function(){
+          skrypt3.style.backgroundColor="#82b637"
+        }
+        skrypt3.onmouseout = function(){
+          skrypt3.style.backgroundColor="#93c748"
+        }
+        skrypt4.onmouseover = function(){
+          skrypt4.style.backgroundColor="#82b637"
+        }
+        skrypt4.onmouseout = function(){
+          skrypt4.style.backgroundColor="#93c748"
+        }
+
+    </script>
+  </body>
+</html>
