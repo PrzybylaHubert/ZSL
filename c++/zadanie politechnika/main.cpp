@@ -100,6 +100,7 @@ struct Klasa{
 			sr+=tablica[i].srednia;
 		}
 		sr/=20;
+		srednia_klasy = sr;
 	}
 	
 	Klasa(){
