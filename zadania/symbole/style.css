@@ -1,0 +1,47 @@
+body{
+text-align:center;
+background-color:Grey;
+color:white;
+}
+
+h1{
+color:navy;
+background-color:darkcyan;
+font-size:60px;
+margin:0%;
+}
+
+h6{
+margin-top:2%;
+margin-bottom:0%;
+font-size:25px;
+color:blue;
+}
+
+table{
+margin-left: auto;
+margin-right: auto;
+border-collapse:collapse;
+}
+
+tr{
+
+background-color:LightBlue;
+}
+
+table tr:nth-child(even){
+background-color:lightGreen;
+
+}
+
+th{
+padding:7px;
+border:solid;
+border-width:2px;
+border-color:white;
+color:black;
+}
+
+footer{
+margin-top:4%;
+}
