@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta author='Hubert Przybyła'>
+		<link rel='stylesheet' href='style.css'>
+		<title> Strona główna </title>
+	</head>
+
+	<body>
+		<div id='baner'>
+			<div id='baner_text'>
+				<img src='' alt='logo'> SKLEP INTERNETOWY
+			</div>
+			<div id='menu'>
+				<div class='buttons' id='categories'> Kategorie	
+					<div id='test'> TEST<br>TEST<br>TEST </div> </div> 
+				<div class='buttons'> <a href='kontakt.html'> Kontakt </a> </div> 
+				<div class='buttons'> Konto </div> 
+				<div class='buttons'> <a href='koszyk.html'> Koszyk </a> </div>
+			</div>
+		</div>
+
+		<script>
+			var categories = document.getElementById('categories');
+			categories.onmouseover = function(){
+				document.write('test');
+			}
+			//var buttons = document.getElementsByClassName('buttons');
+			//buttons.onmouseover = function(){
+			//	document.write('test');
+			//}
+			//document.write('buttons');
+		</script>
+	</body>
+</html>
